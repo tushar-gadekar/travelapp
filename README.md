@@ -26,7 +26,7 @@ The experience is designed to feel like talking to a real travel agent, complete
    ```bash
    flutter run
    ```
-   *(Note: A real Android/iOS device is highly recommended to test the Microphone and Text-to-Speech functionalities properly).*
+   *(Note: A real Android device is highly recommended to test the Microphone and Text-to-Speech functionalities properly).*
 
 ---
 
@@ -80,3 +80,4 @@ To ensure the reviewers **never** experience a rate limit error, we implemented 
 2. **Internet Dependency**: Both the Speech-to-Text engine and the Gemini AI API require an active internet connection to function.
 3. **Limited Dataset**: The local mock dataset only contains flights for a few popular routes (e.g., Mumbai to Dubai, Singapore to Dubai). Searching for obscure routes will result in a graceful "No flights found" response.
 4. **API Key Security**: For the purpose of this assignment and to provide a zero-friction testing experience for the reviewers, the Gemini API key is temporarily hardcoded in `config.dart`. In a production environment, this would be injected via a `.env` file and a CI/CD pipeline.
+   
