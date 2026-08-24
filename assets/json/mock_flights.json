@@ -1,0 +1,102 @@
+[
+  {
+    "id": "FL-001",
+    "airline": "Emirates",
+    "origin": "Mumbai",
+    "destination": "Dubai",
+    "departureTime": "2026-08-29T10:00:00Z",
+    "arrivalTime": "2026-08-29T13:00:00Z",
+    "price": 250.0,
+    "layovers": 0
+  },
+  {
+    "id": "FL-002",
+    "airline": "Air India",
+    "origin": "Mumbai",
+    "destination": "Dubai",
+    "departureTime": "2026-08-29T14:00:00Z",
+    "arrivalTime": "2026-08-29T18:00:00Z",
+    "price": 180.0,
+    "layovers": 1
+  },
+  {
+    "id": "FL-003",
+    "airline": "IndiGo",
+    "origin": "Mumbai",
+    "destination": "Dubai",
+    "departureTime": "2026-08-30T06:00:00Z",
+    "arrivalTime": "2026-08-30T09:30:00Z",
+    "price": 150.0,
+    "layovers": 0
+  },
+  {
+    "id": "FL-004",
+    "airline": "SpiceJet",
+    "origin": "Mumbai",
+    "destination": "Dubai",
+    "departureTime": "2026-08-29T23:00:00Z",
+    "arrivalTime": "2026-08-30T04:00:00Z",
+    "price": 120.0,
+    "layovers": 1
+  },
+  {
+    "id": "FL-005",
+    "airline": "Vistara",
+    "origin": "Delhi",
+    "destination": "London",
+    "departureTime": "2026-09-05T08:00:00Z",
+    "arrivalTime": "2026-09-05T13:00:00Z",
+    "price": 850.0,
+    "layovers": 0
+  },
+  {
+    "id": "FL-006",
+    "airline": "British Airways",
+    "origin": "Delhi",
+    "destination": "London",
+    "departureTime": "2026-09-05T11:00:00Z",
+    "arrivalTime": "2026-09-05T18:00:00Z",
+    "price": 700.0,
+    "layovers": 1
+  },
+  {
+    "id": "FL-007",
+    "airline": "Emirates",
+    "origin": "Delhi",
+    "destination": "London",
+    "departureTime": "2026-09-06T04:00:00Z",
+    "arrivalTime": "2026-09-06T14:00:00Z",
+    "price": 600.0,
+    "layovers": 2
+  },
+  {
+    "id": "FL-008",
+    "airline": "Air India",
+    "origin": "Bangalore",
+    "destination": "Singapore",
+    "departureTime": "2026-09-10T22:00:00Z",
+    "arrivalTime": "2026-09-11T05:00:00Z",
+    "price": 320.0,
+    "layovers": 0
+  },
+  {
+    "id": "FL-009",
+    "airline": "Singapore Airlines",
+    "origin": "Bangalore",
+    "destination": "Singapore",
+    "departureTime": "2026-09-10T10:00:00Z",
+    "arrivalTime": "2026-09-10T17:00:00Z",
+    "price": 450.0,
+    "layovers": 0
+  },
+  {
+    "id": "FL-010",
+    "airline": "IndiGo",
+    "origin": "Bangalore",
+    "destination": "Singapore",
+    "departureTime": "2026-09-11T08:00:00Z",
+    "arrivalTime": "2026-09-11T16:00:00Z",
+    "price": 280.0,
+    "layovers": 1
+  }
+]
