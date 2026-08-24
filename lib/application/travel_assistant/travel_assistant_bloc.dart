@@ -117,21 +117,14 @@ class TravelAssistantBloc extends Bloc<TravelAssistantEvent, TravelAssistantStat
     final ref = "BKG-${DateTime.now().millisecondsSinceEpoch.toString().substring(5)}";
     final successMsg = "Booking confirmed! Ref: $ref";
     await _voiceRepository.speak(successMsg);
-    
-    // Save the current ready state so we don't lose the chat UI
+
     final previousState = state;
-    
-    // Emit the success state so the UI listener shows the Snackbar
     emit(TravelAssistantState.bookingSuccess(ref));
-    
-    // Instantly revert back to the ready state so the chat remains visible
+
     previousState.maybeMap(
       ready: (s) {
-        // Create a new message confirming the booking in the chat
         final aiMsg = ChatMessage(id: DateTime.now().toString(), text: "✅ $successMsg", isUser: false, timestamp: DateTime.now());
         final updatedMessages = List<ChatMessage>.from(s.messages)..add(aiMsg);
-        
-        // Clear suggested flights so they cannot be booked again
         emit(s.copyWith(messages: updatedMessages, suggestedFlights: []));
       },
       orElse: () {},

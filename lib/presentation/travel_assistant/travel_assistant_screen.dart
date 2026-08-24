@@ -30,7 +30,7 @@ class _TravelAssistantScreenState extends State<TravelAssistantScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF1F5F9), // Light grayish-blue background
+      backgroundColor: const Color(0xFFF1F5F9),
       appBar: AppBar(
         title: const Row(
           children: [

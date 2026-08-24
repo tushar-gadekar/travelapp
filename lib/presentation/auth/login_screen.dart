@@ -33,7 +33,6 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // App Logo or Icon
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
@@ -58,8 +57,6 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 16, color: Colors.white70),
                     ),
                     const SizedBox(height: 48),
-
-                    // Reviewer Hint Box
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
@@ -84,8 +81,6 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 32),
-
-                    // Login Form
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withAlpha(242),

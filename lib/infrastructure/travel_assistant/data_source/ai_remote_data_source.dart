@@ -12,7 +12,6 @@ class AIRemoteDataSource {
       throw Exception("API Key is missing. Please add it to config.dart");
     }
 
-    // A robust list of fallback models to guarantee the reviewer never hits a daily quota limit!
     final List<String> fallbackModels = [
       'gemini-3.6-flash',
       'gemini-3.5-flash',
@@ -69,7 +68,6 @@ class AIRemoteDataSource {
           rawText = rawText.replaceAll('```json', '').replaceAll('```', '').trim();
           return TravelRequirement.fromJson(jsonDecode(rawText));
         } else if (response.statusCode == 503 && attempt < maxRetries - 1) {
-          // Model overloaded, wait and retry
           await Future.delayed(Duration(seconds: 2));
           continue;
         } else {
@@ -83,11 +81,9 @@ class AIRemoteDataSource {
         }
       } catch (e) {
         if (e.toString().contains("API is busy") || e.toString().contains("AI model not found") || e.toString().contains("Connection failed")) {
-          // If it's the very last model in our fallback list and it fails, THEN throw the error to the user
           if (attempt == maxRetries - 1) {
              rethrow;
           }
-          // Otherwise, silently wait 1 second and loop to try the NEXT model in the fallback array!
           await Future.delayed(Duration(seconds: 1));
           continue; 
         }

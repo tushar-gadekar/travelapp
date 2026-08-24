@@ -28,7 +28,6 @@ class FlightCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          // Top section (Airline & Price)
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Row(
@@ -58,8 +57,6 @@ class FlightCard extends StatelessWidget {
               ],
             ),
           ),
-          
-          // Divider
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
@@ -74,8 +71,6 @@ class FlightCard extends StatelessWidget {
               ),
             ),
           ),
-          
-          // Middle Section (Origin to Destination)
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Row(
@@ -112,8 +107,6 @@ class FlightCard extends StatelessWidget {
               ],
             ),
           ),
-          
-          // Bottom Section (Book Button)
           Container(
             width: double.infinity,
             decoration: const BoxDecoration(

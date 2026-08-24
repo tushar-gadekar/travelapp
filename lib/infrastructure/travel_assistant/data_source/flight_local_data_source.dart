@@ -6,13 +6,11 @@ import "package:travelapp/infrastructure/travel_assistant/dtos/flight_dto.dart";
 
 class FlightLocalDataSource {
   Future<List<Flight>> searchFlights(TravelRequirement requirement) async {
-    // Simulate network delay
     await Future.delayed(const Duration(seconds: 1));
 
     final String jsonString = await rootBundle.loadString("assets/json/mock_flights.json");
     List<dynamic> jsonList = jsonDecode(jsonString);
     
-    // Parse using DTO, then convert to Domain
     List<Flight> allFlights = jsonList.map((json) => FlightDto.fromJson(json).toDomain()).toList();
 
     return allFlights.where((flight) {

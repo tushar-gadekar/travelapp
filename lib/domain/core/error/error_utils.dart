@@ -5,7 +5,6 @@ class ErrorUtils {
     BuildContext context,
     String message,
   ) {
-    // Hide any currently showing snackbars first
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
