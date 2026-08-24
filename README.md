@@ -4,6 +4,13 @@ A voice-based AI travel booking assistant built with Flutter. This application a
 
 The experience is designed to feel like talking to a real travel agent, completely bypassing traditional search forms.
 
+## 🎥 Demo & Downloads
+
+- 📺 **[Watch the Full Video Demo](https://drive.google.com/file/d/1pKTxeiNZLc4hGOZiHI7nQKnMwdPU0lnE/view?usp=drive_link)**
+- 📱 **[Download & Install the Android APK](https://drive.google.com/file/d/10vWbTTlVnymgYCricPQlXbNS64GX3UOY/view?usp=drive_link)**
+
+---
+
 ## 🚀 Setup Instructions
 
 1. **Clone the repository:**
